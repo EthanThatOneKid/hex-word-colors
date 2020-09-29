@@ -1,23 +1,24 @@
-const { createInterface } = require("readline");
 const { createReadStream, writeFile } = require("fs");
-const { validateHexNumeral } = require("./index");
+const Stream = require("stream");
 const colors = require("hex-to-color-name");
+const { createInterface } = require("readline");
+const { validateHexNumeral } = require("./index");
 
 const wordsFilePath = `./src/data/words.txt`;
 const exportFilePath = `./reports/${new Date().valueOf()}.report.md`;
 const withColorPreview = process.argv[2] === "--color-preview";
 
+let totalLines = 0;
+let totalValidWords = 0;
+let beganAt = new Date().valueOf();
 let result = `| Word | Hexadecimal Counterpart | Color Representation |
 | ---- | ----------------------- | -------------------- |`;
 
-const file = createInterface({
-  input: createReadStream(wordsFilePath),
-  output: process.stdout,
-  terminal: false,
-});
+const file = createInterface(createReadStream(wordsFilePath), new Stream());
 
 file
   .on("line", (line) => {
+    totalLines++;
     const hex = validateHexNumeral(line);
     if (hex !== null) {
       const colorName = colors(hex);
@@ -25,13 +26,23 @@ file
         ? `![#${hex}; ${colorName}](https://placehold.it/150x40/${hex}/FFFFFF?text=${colorName})`
         : colorName;
       result += `\n|\`${line}\`|\`#${hex}\`|${color}|`;
+      totalValidWords++;
     }
   })
   .on("close", () => {
     writeFile(exportFilePath, result, () => {
-      console.log("FINISHED");
+      console.log("FINISHED", {
+        totalValidWords,
+        totalLines,
+        ratio: `(${(100 * totalValidWords) / totalLines})%`,
+        exportedTo: exportFilePath,
+        elapsed: `${new Date().valueOf() - beganAt}ms`,
+      });
     });
   })
+  // .on("end", () => {
+  //   console.log("end", a);
+  // })
   .on("error", (error) => {
     throw error;
   });
