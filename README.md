@@ -2,6 +2,8 @@
 
 > A dictionary of words that can be written as hexadecimal numerals.
 
+[**See the results!!**](experiment/reports/1601354613226.report.md)
+
 ## Experiment 🧪
 
 I was curious if it was possible to write any words as a hexidecimal numeral that would be relavent to their actual color representation. For example, `___`.
@@ -50,4 +52,4 @@ So, since there are, on average, higher digits in the hexidecimal numerals, the 
 
 Engineered with <3 by [EthanThatOneKid][creator_site]
 
-[creator_site]: #
+[creator_site]: http://ethandavidson.com/

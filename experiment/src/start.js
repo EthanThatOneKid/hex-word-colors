@@ -48,9 +48,8 @@ file
       const nextEntry = `\n|\`${line}\`|\`#${hex}\`|${color}|`;
       if (withTableByColor) {
         tables[colorName] += nextEntry;
-      } else {
-        result += nextEntry;
       }
+      result += nextEntry;
       totalValidWords++;
     }
   })
