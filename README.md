@@ -6,7 +6,7 @@
 
 ## Experiment 🧪
 
-I was curious if it was possible to write any words as a hexidecimal numeral that would be relavent to their actual color representation. For example, `___`.
+I was curious if it was possible to write any words as a hexidecimal numeral that would be relavent to their actual color representation. For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color!
 
 ### Constraints
 
