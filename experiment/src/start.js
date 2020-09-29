@@ -7,6 +7,15 @@ const { validateHexNumeral } = require("./index");
 const wordsFilePath = `./src/data/words.txt`;
 const exportFilePath = `./reports/${new Date().valueOf()}.report.md`;
 const withColorPreview = process.argv[2] === "--color-preview";
+const colorMap = {
+  white: "FFFFFF",
+  black: "000000",
+  red: "FF0000",
+  green: "00FF00",
+  blue: "0000FF",
+  pink: "FF00FF",
+  yellow: "FFFF00",
+};
 
 let totalLines = 0;
 let totalValidWords = 0;
@@ -21,7 +30,7 @@ file
     totalLines++;
     const hex = validateHexNumeral(line);
     if (hex !== null) {
-      const colorName = colors(hex);
+      const colorName = colors(hex, colorMap);
       const color = withColorPreview
         ? `![#${hex}; ${colorName}](https://placehold.it/150x40/${hex}/FFFFFF?text=${colorName})`
         : colorName;
