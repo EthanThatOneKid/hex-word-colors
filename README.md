@@ -1,6 +1,6 @@
-# Hex-Word-Colors
+# Hex-Word-Colors 🐝
 
-> A dictionary of words that can be written as hexadecimal numerals.
+> A catalog of words that can be written as hexadecimal numerals.
 
 [**See the results!!**](experiment/reports/1601355040120.report.md)
 
@@ -32,7 +32,7 @@ Here is how letters are mapped to numbers if necessary:
 
 Additionally, valid hexadecimal numerals can be notated with only either a length of 3 or 6. This means that words with only either 3 or 6 letters will be valid.
 
-### Results
+### Results 🤓
 
 The resulting report can be found [here](experiment/reports)!
 You can run the experiment yourself by following the instructions in the [`experiment` directory](experiment).
@@ -42,7 +42,7 @@ You can run the experiment yourself by following the instructions in the [`exper
 The first 2 digits represent the brightness of the red channel, the second two digits represent the brightness of the green channel, and the last 2 digits represent the brightness of the blue channel.
 So, when there are "higher" digits in the hexadecimal numerals, the color representations appear brighter.
 
-## Going Forward
+## Going Forward 😎
 
 Going forward, it would be cool to be able to see if any of the valid hexadecimal words semantically corresponds to a color.
 For example, For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color.
