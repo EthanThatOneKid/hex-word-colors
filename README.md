@@ -32,8 +32,6 @@ Here is how letters are mapped to numbers if necessary:
 
 Additionally, valid hexadecimal numerals can be notated with only either a length of 3 or 6. This means that words with only either 3 or 6 letters will be valid.
 
-To test my luck, I decided to see which of these valid words that can be written as a hexadecimal numeral actually represents something that resembles the color of the hexidecimal value.
-
 ### Results
 
 The resulting report can be found [here](experiment/reports)!
