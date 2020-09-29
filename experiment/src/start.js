@@ -22,13 +22,12 @@ file
     if (hex !== null) {
       const colorName = colors(hex);
       const color = withColorPreview
-        ? `![#${hex}](https://placehold.it/150x40/${hex}/FFFFFF?text=${colorName})`
+        ? `![#${hex}; ${colorName}](https://placehold.it/150x40/${hex}/FFFFFF?text=${colorName})`
         : colorName;
       result += `\n|\`${line}\`|\`#${hex}\`|${color}|`;
     }
   })
   .on("close", () => {
-    result += `\n|      |                         |`;
     writeFile(exportFilePath, result, () => {
       console.log("FINISHED");
     });
