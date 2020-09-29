@@ -6,8 +6,8 @@ const { validateHexNumeral } = require("./index");
 
 const wordsFilePath = `./src/data/words.txt`;
 const exportFilePath = `./reports/${new Date().valueOf()}.report.md`;
-const withColorPreview = process.argv[2] === "--color-preview";
-const withTableByColor = process.argv[2] === "--table-by-color";
+const withColorPreview = process.argv.includes("--color-preview");
+const withTableByColor = process.argv.includes("--table-by-color");
 const tableHeader = `| Word | Hexadecimal Counterpart | Color Representation |
 | ---- | ----------------------- | -------------------- |`;
 const colorMap = {
