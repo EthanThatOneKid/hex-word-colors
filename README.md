@@ -46,10 +46,15 @@ There are 3 parts of every hexidecimal numeral.
 The first 2 digits represent the brightness of the red channel, the second two digits represent the brightness of the green channel, and the last 2 digits represent the brightness of the blue channel.
 So, since there are, on average, higher digits in the hexidecimal numerals, the color representations appear brigher.
 
+## Going Forward
+
+Going forward, it would be cool to be able to see if any of the valid hexadecimal words semantically corresponds to a color. For example, For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color. A dataset like [this one](https://www.kaggle.com/rtatman/color-terms-dataset) on Kaggle
+
 ---
 
-<!-- TODO: Buy me a coffee -->
+[![Buy me a Coffee](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF813F)][bmac]
 
-Engineered with <3 by [EthanThatOneKid][creator_site]
+Scienced with <3 by [EthanThatOneKid][creator_site]
 
 [creator_site]: http://ethandavidson.com/
+[bmac]: http://buymeacoff.ee/etok
