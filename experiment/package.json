@@ -7,6 +7,7 @@
     "test": "node src/start.js",
     "start": "node src/start.js --color-preview",
     "start:no-color-preview": "node src/start.js",
+    "start:table-by-color": "node src/start.js --table-by-color",
     "compress": "node src/compress.js"
   },
   "repository": {
