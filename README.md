@@ -46,7 +46,7 @@ So, since there are, on average, higher digits in the hexidecimal numerals, the 
 
 ## Going Forward
 
-Going forward, it would be cool to be able to see if any of the valid hexadecimal words semantically corresponds to a color. For example, For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color. A dataset like [this one](https://www.kaggle.com/rtatman/color-terms-dataset) on Kaggle
+Going forward, it would be cool to be able to see if any of the valid hexadecimal words semantically corresponds to a color. For example, For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color. A dataset like [this one](https://www.kaggle.com/rtatman/color-terms-dataset) on Kaggle would do the trick but this one is too small. When I find a solid dataset with that type of data, I will write another script that generates a report showing all the words that correspond with the correct hexadecimal color representation!
 
 ---
 
