@@ -6,22 +6,30 @@ const replaceInvalidLettersWithNumbers = (word) => {
     switch (word[i]) {
       case "g":
         word[i] = "9";
+        break;
       case "i":
         word[i] = "1";
+        break;
       case "l":
         word[i] = "1";
+        break;
       case "o":
         word[i] = "0";
+        break;
       case "s":
         word[i] = "5";
+        break;
       case "t":
         word[i] = "7";
+        break;
       case "z":
         word[i] = "2";
+        break;
       default:
         if (!validCharacters.has(word[i])) {
           return null;
         }
+        break;
     }
   }
   return word.join("");
