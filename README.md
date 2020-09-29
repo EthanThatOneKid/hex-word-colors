@@ -1,6 +1,6 @@
 # Hex-Word-Colors
 
-> A dictionary of words that can be written as hexadecimal numerals.
+> A catalog of words that can be written as hexadecimal numerals.
 
 [**See the results!!**](experiment/reports/1601355040120.report.md)
 
