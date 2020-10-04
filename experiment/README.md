@@ -12,4 +12,4 @@ I got the large text file with all the English words from a repository called [`
 
 ## The Results
 
-By running, `npm start`, a report gets generated. A sample report can be found [here](../reports).
+By running, `npm start`, a report gets generated. A sample report can be found [here](reports).
