@@ -45,9 +45,11 @@ So, when there are "higher" digits in the hexadecimal numerals, the color repres
 ## Going Forward 😎
 
 Going forward, it would be cool to be able to see if any of the valid hexadecimal words semantically corresponds to a color.
-For example, For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color.
+For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color.
 A dataset like [this one](https://www.kaggle.com/rtatman/color-terms-dataset) on Kaggle would do the trick but this one is too small.
 When I find a solid dataset with that type of data, I will write another script that generates a report showing all the words that correspond with the correct hexadecimal color representation!
+Additionally, in some environments, if there are invalid digits (`/[g-zG-Z]/`) in a hexadecimal numeral, their value is set to zero by default.
+This means that there are potentially a lot more words that can be associated with colors than previously discovered.
 
 ---
 
