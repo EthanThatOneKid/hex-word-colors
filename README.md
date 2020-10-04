@@ -6,7 +6,8 @@
 
 ## Experiment 🧪
 
-I was curious if it was possible to write any words as a hexadecimal numeral that would be relevant to their actual color representation. For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color!
+I was curious if it was possible to write any words as a hexadecimal numeral that would be relevant to their actual color representation.
+For example, "ice" can be written as `#1ce` in hexadecimal and it coincidentally has an icy-blue color!
 
 ### Constraints
 
@@ -17,7 +18,7 @@ Here are the available characters that valid hexadecimal numerals allow:
 - Letters: `a`, `b`, `c`, `d`, `e`, `f`
 - Numbers: `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`
 
-Since there are only 6 (hence _hex_ in "hexadecimal") letters available in hex-codes.
+Since there are only 6 (hence _hex_ in "hexadecimal") letters available in hex-codes, in order to widen the possibilities of results for this experiment, I chose to use numbers to represent some missing letters of the alphabet.
 Here is how letters are mapped to numbers if necessary:
 
 | Letter | Number |
